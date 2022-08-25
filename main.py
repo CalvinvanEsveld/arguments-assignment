@@ -24,10 +24,11 @@ def force(mass, body='earth'):
     'mercury': 3.7,
     'moon': 1.6,
     'pluto': 0.6}
+    
     for planet in bodies.keys():
         if body == planet:
             force = mass * bodies.get(planet)    
-            return force
+    return force
 
 print(force(0.1, 'earth'))
 
